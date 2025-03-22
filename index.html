@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>ChatCast</title>
-    <meta name="description" content="ChatCast | Whatsapp ideas to Youtube casts" />
+    <meta name="description" content="ChatCast |  Whatsapp ideas to Youtube casts" />
     <link rel="shortcut icon" href="./assets/images/favicon.png" />
 
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <nav class="navbar">
         <a href="/" class="nav__logo"><img src="./assets/images/logo.svg" width="168" alt="ChatCast logo" /></a>
-        <a href="#contact" class="nav__cta">Contact Us</a>
+        <div class="flex">
+          <div class="nav__ctas">
+            <button class="nav__cta nav__cta--signup openModalButton" data-modal="signupModal">Sign Up</button>
+            <button class="nav__cta nav__cta--signin openModalButton" data-modal="signinModal">Sign In</button>
+          </div>
+          <div class="avatar__wrapper">
+            <button class="nav__avatar"><img class="nav__avatar-img" src="./assets/images/avatar.png" width="45" height="45" alt="avatar" /></button>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -25,9 +34,10 @@
         <div class="hero__content">
           <h1>WhatsApp chats to YouTube casts</h1>
           <p>ChatCast grabs your ideas on WhatsApp to craft polished YouTube videocasts—no pricey gear, no expertise, just chat, on-the-go.</p><p></p>
+
           <div class="hero__ctas">
-            <a href="https://wa.me/+12509440946?text=Hi,%20I%20want%20to%20create%20my%20podcast" class="hero__cta hero__cta--red">Get Started</a>
-            <a href="#contact" class="hero__cta hero__cta--black">Contact Us</a>
+            <a href="#" class="hero__cta hero__cta--red">Get Started</a>
+            <a href="#" class="hero__cta hero__cta--black">Contact Us</a>
           </div>
         </div>
         <div class="video-container">
@@ -40,84 +50,85 @@
         </div>
       </section>
       <!-- Plans -->
-
-
-
-<section class="plans">
-  <div class="plans__header">
-    <h2>Creators &amp; Teams — We’ve got you</h2>   
-    <p>Start free, or go pro to unlock more.</p>
-  </div>
-  <div class="plans__card__wrapper">
-    <div class="plans__card">
-      <div class="plans__card__header">
-        <h3 class="plans__card-title">Free</h3>
-        <p class="plans__card-description">Ready to go</p>
-      </div>
-      <p class="plans__card-subheading">Features:</p>
-      <ul class="plans__card-list">
-        <li>1 project, 2GB</li>
-        <li>1 episode/day</li>
-        <li>5 shared templates</li>
-        <li>2 contributors</li>
-        <li>Your YouTube account</li>
-        <li>Community support</li>
-       
-      </ul>
-    </div>
-    <div class="plans__card">
-      <div class="plans__card__header">
-        <h3 class="plans__card-title">Pro</h3>
-        <p class="plans__card-description">$10/mo, lift off</p>
-      </div>
-      <p class="plans__card-subheading">Everything in Free, and:</p>
-      <ul class="plans__card-list">
-        <li>2 projects, 4GB</li>
+      <section class="plans">
+        <div class="plans__header">
+          <h2>Creators &amp; Teams — We’ve got you</h2>
+          <p>Start free, or go pro to unlock more.</p>
+        </div>
+        <div class="plans__card__wrapper">
+          <div class="plans__card">
+            <div class="plans__card__header">
+              <h3 class="plans__card-title">Free</h3>
+              <p class="plans__card-description">Ready to go</p>
+            </div>
+            <p class="plans__card-subheading">Features:</p>
+            <ul class="plans__card-list">
+ <li>2 projects, 4GB</li>
         <li>1 episode/day/project</li>
         <li>20 shared templates</li>
         <li>YouTube, TikTok</li>
-	<li>Custom images, music</li>
+        <li>Custom images, music</li>
         <li>Monetization Advisory</li>
-      </ul>
-    </div>
-    <div class="plans__card">
-      <div class="plans__card__header">
-        <h3 class="plans__card-title">Business</h3>
-        <p class="plans__card-description">$20/mo, branded output</p>
-      </div>
-      <p class="plans__card-subheading">Everything in Pro, and:</p>
-      <ul class="plans__card-list">
-        <li>3 projects, 5GB</li>
+
+
+            </ul>
+            <a href="#" class="plans__card-cta">Get Started</a>
+          </div>
+          <div class="plans__card">
+            <div class="plans__card__header">
+              <h3 class="plans__card-title">Pro</h3>
+              <p class="plans__card-description">$10/mo, lift off</p>
+            </div>
+            <p class="plans__card-subheading">Everything in Free, and:</p>
+            <ul class="plans__card-list">
+    <li>2 projects, 4GB</li>
+        <li>1 episode/day/project</li>
+        <li>20 shared templates</li>
+        <li>YouTube, TikTok</li>
+        <li>Custom images, music</li>
+        <li>Monetization Advisory</li>
+
+            </ul>
+            <a href="#" class="plans__card-cta">Buy Now</a>
+          </div>
+          <div class="plans__card">
+            <div class="plans__card__header">
+              <h3 class="plans__card-title">Business</h3>
+              <p class="plans__card-description">$20/mo, branded output</p>
+            </div>
+            <p class="plans__card-subheading">Everything in Pro, and:</p>
+            <ul class="plans__card-list">
+  <li>3 projects, 5GB</li>   
         <li>2 episodes/day/project</li>
         <li>6 contributors</li>
-        <li>Custom templates</li>
+        <li>Custom templates</li>  
         <li>YouTube, TikTok, LinkedIn</li>
         <li>Chat support</li>
-      </ul>
-    </div>
-    <div class="plans__card">
-      <div class="plans__card__header">
-        <h3 class="plans__card-title">Enterprise</h3>
-        <p class="plans__card-description">$300/team, unlimited scale</p>
-      </div>
-      <p class="plans__card-subheading">Everything in Business, and:</p>
-      <ul class="plans__card-list">
-        <li>Unlimited projects, 50GB</li>
+            </ul>
+            <a href="#" class="plans__card-cta">Buy Now</a>
+          </div>
+          <div class="plans__card">
+            <div class="plans__card__header">
+              <h3 class="plans__card-title">Enterprise</h3>
+              <p class="plans__card-description">$300/team, unlimited scale</p>
+            </div>
+            <p class="plans__card-subheading">Everything in Business, and:</p>
+            <ul class="plans__card-list">
+  <li>Unlimited projects, 50GB</li>
         <li>Unlimited episodes</li>
         <li>YouTube, TikTok, LinkedIn, Slack</li>
         <li>AI customization, RAG</li>
         <li>Voice customization</li>
         <li>Unlimited contributors</li>
-      </ul>
-    </div>
-  </div>
-  <div class="plans__cta_wrapper">
-    <a href="#" class="plans__cta">Get Started</a>
-  </div>
-</section>
 
-
-
+            </ul>
+            <a href="#" class="plans__card-cta">Buy Now</a>
+          </div>
+        </div>
+        <div class="plans__cta_wrapper">
+          <a href="#" class="plans__cta">Get Started</a>
+        </div>
+      </section>
       <!-- Contact -->
       <section class="contact" id="contact">
         <div class="contact__container">
@@ -191,6 +202,56 @@
         </nav>
       </div>
     </footer>
+    <aside>
+      <!-- Sign Up Modal ========================== -->
+      <div id="signupModal" class="modal" role="dialog" aria-labelledby="Sign Up" aria-hidden="true">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content__wrapper">
+          <div class="modal__content">
+            <h2 class="modal__title">Sign Up</h2>
+            <p class="modal__subtitle">We will send you a one-time password in Whatsapp for authorization in the system</p>
+            <form>
+              <div class="input__group">
+                <input type="text" id="phoneNo" required />
+                <label for="phoneNo">Your phone</label>
+                <div class="error__message">Please enter a valid phone number</div>
+              </div>
+              <button type="submit" class="modal__submit-btn">Send</button>
+              <div class="modal__resend-text">Didn't receive the code? <a href="#">Send it again</a></div>
+            </form>
+            <p class="modal__form-note">By continuing, you agree to xAI's <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a>.</p>
+          </div>
+          <button class="closeModalButton close__btn" aria-label="Close Modal 1">
+            <img src="./assets/images/close-btn.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Sign In Modal ========================== -->
+      <div id="signinModal" class="modal" role="dialog" aria-labelledby="Sign In" aria-hidden="true">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content__wrapper">
+          <div class="modal__content">
+            <h2 class="modal__title">Sign In</h2>
+            <p class="modal__subtitle">We will send you a one-time password in Whatsapp for authorization in the system</p>
+            <form>
+              <div class="input__group">
+                <input type="text" id="phoneNo" required />
+                <label for="phoneNo">Your phone</label>
+                <div class="error__message">Please enter a valid phone number</div>
+              </div>
+              <button type="submit" class="modal__submit-btn">Send</button>
+              <div class="modal__resend-text">Didn't receive the code? <a href="#">Send it again</a></div>
+            </form>
+            <p class="modal__form-note">By continuing, you agree to xAI's <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a>.</p>
+          </div>
+          <button class="closeModalButton close__btn" aria-label="Close Modal 1">
+            <img src="./assets/images/close-btn.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </aside>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/modal.js"></script>
   </body>
 </html>

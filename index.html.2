@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ChatCast</title>
+    <meta name="description" content="ChatCast | Whatsapp ideas to Youtube casts" />
+    <link rel="shortcut icon" href="./assets/images/favicon.png" />
+
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="/" class="nav__logo"><img src="./assets/images/logo.svg" width="168" alt="ChatCast logo" /></a>
+        <a href="#contact" class="nav__cta">Contact Us</a>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__content">
+          <h1>WhatsApp chats to YouTube casts</h1>
+          <p>ChatCast grabs your ideas on WhatsApp to craft polished YouTube videocasts—no pricey gear, no expertise, just chat, on-the-go.</p><p></p>
+          <div class="hero__ctas">
+            <a href="https://wa.me/+12509440946?text=Hi,%20I%20want%20to%20create%20my%20podcast" class="hero__cta hero__cta--red">Get Started</a>
+            <a href="#contact" class="hero__cta hero__cta--black">Contact Us</a>
+          </div>
+        </div>
+        <div class="video-container">
+          <button id="playButton" class="play-button">
+            <img src="./assets/images/play-btn.svg" width="62" height="62" alt="" />
+          </button>
+          <video poster="./assets/images/poster.webp" class="video" id="video" muted="">
+            <source src="https://github.com/user-attachments/assets/10640dbd-631c-42d8-a246-9b7a72eddb5b" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+      <!-- Plans -->
+
+
+
+<section class="plans">
+  <div class="plans__header">
+    <h2>Creators &amp; Teams — We’ve got you</h2>   
+    <p>Start free, or go pro to unlock more.</p>
+  </div>
+  <div class="plans__card__wrapper">
+    <div class="plans__card">
+      <div class="plans__card__header">
+        <h3 class="plans__card-title">Free</h3>
+        <p class="plans__card-description">Ready to go</p>
+      </div>
+      <p class="plans__card-subheading">Features:</p>
+      <ul class="plans__card-list">
+        <li>1 project, 2GB</li>
+        <li>1 episode/day</li>
+        <li>5 shared templates</li>
+        <li>2 contributors</li>
+        <li>Your YouTube account</li>
+        <li>Community support</li>
+       
+      </ul>
+    </div>
+    <div class="plans__card">
+      <div class="plans__card__header">
+        <h3 class="plans__card-title">Pro</h3>
+        <p class="plans__card-description">$10/mo, lift off</p>
+      </div>
+      <p class="plans__card-subheading">Everything in Free, and:</p>
+      <ul class="plans__card-list">
+        <li>2 projects, 4GB</li>
+        <li>1 episode/day/project</li>
+        <li>20 shared templates</li>
+        <li>YouTube, TikTok</li>
+	<li>Custom images, music</li>
+        <li>Monetization Advisory</li>
+      </ul>
+    </div>
+    <div class="plans__card">
+      <div class="plans__card__header">
+        <h3 class="plans__card-title">Business</h3>
+        <p class="plans__card-description">$20/mo, branded output</p>
+      </div>
+      <p class="plans__card-subheading">Everything in Pro, and:</p>
+      <ul class="plans__card-list">
+        <li>3 projects, 5GB</li>
+        <li>2 episodes/day/project</li>
+        <li>6 contributors</li>
+        <li>Custom templates</li>
+        <li>YouTube, TikTok, LinkedIn</li>
+        <li>Chat support</li>
+      </ul>
+    </div>
+    <div class="plans__card">
+      <div class="plans__card__header">
+        <h3 class="plans__card-title">Enterprise</h3>
+        <p class="plans__card-description">$300/team, unlimited scale</p>
+      </div>
+      <p class="plans__card-subheading">Everything in Business, and:</p>
+      <ul class="plans__card-list">
+        <li>Unlimited projects, 50GB</li>
+        <li>Unlimited episodes</li>
+        <li>YouTube, TikTok, LinkedIn, Slack</li>
+        <li>AI customization, RAG</li>
+        <li>Voice customization</li>
+        <li>Unlimited contributors</li>
+      </ul>
+    </div>
+  </div>
+  <div class="plans__cta_wrapper">
+    <a href="#" class="plans__cta">Get Started</a>
+  </div>
+</section>
+
+
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <div class="contact__container">
+          <div class="contact__content">
+            <h2 class="contact__title">Contact Us</h2>
+            <p class="contact__subtitle">ChatCast is free to try for as long as you’d like. We'd love to hear from you!</p>
+            <form class="contact__form">
+              <div class="input__row">
+                <div class="input__group">
+                  <input type="text" id="first-name" required />
+                  <label for="first-name">First Name</label>
+                </div>
+                <div class="input__group">
+                  <input type="text" id="last-name" required />
+                  <label for="last-name">Last Name</label>
+                </div>
+              </div>
+              <div class="input__row">
+                <div class="input__group">
+                  <input type="text" id="phone" required />
+                  <label for="phone">Phone</label>
+                </div>
+                <div class="input__group">
+                  <input type="email" id="email" required />
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="input__group">
+                <textarea id="message" rows="3" required></textarea>
+                <label for="message">Message</label>
+              </div>
+              <button type="submit" class="submit__btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="/" class="footer__logo">
+            <img src="./assets/images/logo.svg" alt="ChatCast Logo" />
+          </a>
+        </div>
+        <nav class="footer__social">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="#" aria-label="YouTube"><img src="./assets/images/youtube.svg" alt="YouTube" /></a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" aria-label="WhatsApp"><img src="./assets/images/whatsapp.svg" alt="WhatsApp" /></a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" aria-label="TikTok"><img src="./assets/images/tiktok.svg" alt="TikTok" /></a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" aria-label="Instagram"><img src="./assets/images/instagram.svg" alt="Instagram" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <hr class="footer__divider" />
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 ChatCast. All rights reserved.</p>
+        <nav class="footer__links">
+          <ul class="footer__links-list">
+            <li class="footer__links-item"><a href="./terms-of-use.html" class="footer__link">Terms of use</a></li>
+            <li class="footer__links-item"><a href="./privacy.html" class="footer__link">Privacy policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
