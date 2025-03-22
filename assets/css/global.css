@@ -51,14 +51,31 @@ img {
   height: auto;
   max-width: 100%;
 }
+button {
+  all: unset;
+}
 input,
 textarea,
 button {
   font-family: inherit;
 }
+.flex {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   body {
     padding: 20px;
+  }
+  .flex {
+    gap: 8px;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    padding: 12px;
   }
 }
 
@@ -78,29 +95,67 @@ button {
   width: 168px;
   height: auto;
 }
+.nav__ctas {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
 .nav__cta {
   font-size: 18px;
   font-weight: 600;
   line-height: 1;
-  color: #f3f3f3;
   padding: 14px 32px;
   border-radius: 64px;
-  background: #232323;
   transition: 0.3s;
+  border: 1px solid #232323;
+  white-space: nowrap;
+  cursor: pointer;
 }
 .nav__cta:hover {
   opacity: 0.9;
 }
+.nav__cta--signup {
+  color: #f3f3f3;
+  background: #232323;
+}
+.nav__cta--signin:hover {
+  color: #f3f3f3;
+  background: #232323;
+}
+.nav__avatar {
+  cursor: pointer;
+}
+.nav__avatar-img {
+  border-radius: 50%;
+  height: 48px;
+  width: auto;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 8px 12px;
   }
+  .nav__ctas {
+    gap: 6px;
+  }
   .nav__cta {
     font-size: 16px;
-    padding: 12px 24px;
+    padding: 10px 20px;
   }
   .nav__logo img {
     width: 120px;
+  }
+  .nav__avatar-img {
+    height: 38px;
+  }
+}
+@media (max-width: 375px) {
+  .nav__logo img {
+    width: 100px;
+  }
+  .nav__cta {
+    font-size: 14px;
+    padding: 10px 12px;
   }
 }
 
