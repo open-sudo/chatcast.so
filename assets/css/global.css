@@ -1,3 +1,35 @@
+/* 1. Add a wrapper for hero content and video */
+.hero__wrapper {
+  max-width: 700px;    /* Match this to your .hero__content width or desired width */
+  margin: 0 auto;      /* Center the wrapper horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 2. Make sure .hero__content fills the wrapper and centers text */
+.hero__content {
+  width: 100%;
+  text-align: center;
+}
+
+/* 3. Center the video and make it responsive */
+.video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+/* 4. Responsive video sizing */
+.video-wrapper {
+  aspect-ratio: 9 / 16;
+  max-width: 320px;
+  width: 100%;
+  flex: 1 1 300px;
+}
+
+
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/gilroy/Gilroy-Medium.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Medium.woff") format("woff");
